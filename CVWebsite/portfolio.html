@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugo leijonhufvud's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Portfolio</h1>
+        <div class="project">
+            <h2>School database with functions</h2>
+            <img src="images/project1.jpg" alt="Project 1">
+            <button onclick="showModal('project1')">More Info</button>
+            <div id="project1" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('project1')">&times;</span>
+                    <p>I made a school database where you could store students, teachers, grades, classes and connect them all through id's. There was also a login function and you could do different commands to access and change things in the database</p>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <h2>Music minimal API</h2>
+            <img src="images/project2.jpg" alt="Project 2">
+            <button onclick="showModal('project2')">More Info</button>
+            <div id="project2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('project2')">&times;</span>
+                    <p>In a group we made a music API and a client app to work with it that would get music from a webapi and where it had different functions like checking popularity and likes.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hugo leijonhufvud. All Rights Reserved.</p>
+    </footer>
+    <a href="#" class="back-to-top">Back to Top</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
